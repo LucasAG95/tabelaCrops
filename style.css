@@ -1,0 +1,27 @@
+/* style.css */
+/* ========  layout das checkboxes  ======== */
+.skills-list{
+  /* 3 linhas por coluna */
+  display: grid;
+  grid-auto-flow: column;          /* preenche por coluna */
+  grid-template-rows: repeat(3, auto);
+  gap: .5rem 2rem;                 /* espaço vertical | horizontal */
+  align-items: start;              /* alinha topo das colunas */
+}
+
+/* input e label na mesma “linhazinha” */
+.skills-list input[type="checkbox"]{
+  margin-right: .4rem;
+}
+
+/* ========  ajustes visuais opcionais  ======== */
+body{
+  font-family: system-ui, sans-serif;
+  padding: 1rem;
+}
+
+#saida{
+  margin-top: 1.5rem;
+  white-space: pre-line;           /* já existia no seu <style> interno */
+  font-family: monospace;
+}
